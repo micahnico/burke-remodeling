@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  details: 
+  text_alert: false
+  due_at: 2017-02-01 13:26:45
+  completed_at: 2017-02-01 13:26:45
+  completed: false
+
+two:
+  title: MyString
+  details: 
+  text_alert: false
+  due_at: 2017-02-01 13:26:45
+  completed_at: 2017-02-01 13:26:45
+  completed: false

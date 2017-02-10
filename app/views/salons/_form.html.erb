@@ -1,0 +1,67 @@
+<%= form_for([@city, @zip_code, @salon]) do |f| %>
+  <% if @salon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@salon.errors.count, "error") %> prohibited this salon from being saved:</h2>
+
+      <ul>
+      <% @salon.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :business_name %><br>
+    <%= f.text_field :business_name %>
+  </div>
+  <div class="field">
+    <%= f.label :street_address %><br>
+    <%= f.text_field :street_address %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :time_zone %><br>
+    <%= f.select(:time_zone, options_for_select([['EDT', 'EDT'], ['CDT', 'CDT'], ['MDT', 'MDT'],['PST', 'PST']]), class: "form-control") 
+    %>
+  </div>
+   <div class="field">
+    <%= f.label :contact %><br>
+    <%= f.text_field :contact %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :stage %><br>
+    <%= f.select(:stage, options_for_select([['Prospect', 'prospect'], ['Contact', 'contact'], ['Call Back', 'call_back'], ['Demo', 'demo'], ['Closed YES', 'closed_yes'],['Closed NO', 'closed_no'], ['Bad Number', 'bad_number']]), class: "form-control") 
+    %>
+  </div>
+  <div class="field">
+    <%= f.label :web_address %><br>
+    <%= f.text_field :web_address %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br>
+    <%= f.check_box :website %>
+  </div>
+  <div class="field">
+    <%= f.label :mobile_ready %><br>
+    <%= f.check_box :mobile_ready %>
+  </div>
+  <div class="field">
+    <%= f.label :appointment_scheduling %><br>
+    <%= f.check_box :appointment_scheduling %>
+  </div>
+  <div class="field">
+    <%= f.label :zip_code_id %><br>
+    <%= f.number_field :zip_code_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+

@@ -1,0 +1,53 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<h1>Editing Salon</h1>
+
+			<%= render 'form' %>
+		</div>
+
+		<div class="col-md-6">
+			<h4 class="notes_title text-center">Notes</h4>
+		    <%= form_for [@salon, Note.new] do |f| %>
+		    <div class="field">
+		        <div class="input-group">
+		        <%= f.text_field :body, class: "form-control body", :required => true, :placeholder => 'Add Note', :style => 'height: 36px !important;' %>
+		        <div class="input-group-addon"><%= f.submit 'Create', class: 'nothing' %></div>
+		        </div>
+		    </div>
+		    <% end %>
+		    <div class="notes-margin">
+
+		        <% @salon.notes.each do |note| %>
+		        <p>Created At: <%= note.created_at %></p>
+		        <p><%= note.body %></p>
+		        <% end %>
+
+		    </div><br />
+			<h4 class="tasks_title text-center">Tasks</h4>
+		    <%= form_for [@salon, Task.new] do |f| %>
+		        <div class="input-group">
+		        <%= f.text_field :title, class: "form-control body", :required => true, :placeholder => 'Task Title', :style => 'height: 36px !important;' %>
+		        </div>
+		        <div class="input-group">
+		        <%= f.text_field :details, class: "form-control body", :required => true, :placeholder => 'Add Details', :style => 'height: 36px !important;' %>
+		        </div>
+		        <%= f.submit 'Create', class: 'btn btn-default' %>
+		    <% end %>
+		    <div class="notes-margin">
+
+		        <% @salon.tasks.each do |task| %>
+		        <p>Due At: <%= task.due_at %></p>
+		        <p><%= task.title %></p>
+		        <p><%= task.details %></p>
+		        <p>----------------------</p>
+		        <% end %>
+
+		    </div>
+		</div>
+	</div>
+	<%= link_to 'Show', city_zip_code_salon_path(@city, @zip_code, @salon), class: "btn btn-default" %> |
+	<%= link_to 'Back', city_zip_code_salons_path(@city, @zip_code), class: "btn btn-default" %>
+</div>
+
+

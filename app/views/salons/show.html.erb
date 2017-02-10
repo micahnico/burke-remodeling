@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Business name:</strong>
+  <%= @salon.business_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @salon.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @salon.phone %>
+</p>
+
+<p>
+  <strong>Stage:</strong>
+  <%= @salon.stage %>
+</p>
+
+<p>
+  <strong>Zip code:</strong>
+  <%= @salon.zip_code_id %>
+</p>
+
+<%= link_to 'Edit', edit_city_zip_code_salon_path(@city, @zip_code, @salon) %> |
+<% if current_user.admin? %>
+<%= link_to 'Back', city_zip_code_salons_path(@city, @zip_code) %>
+<% else %>
+<%= link_to 'Back', cities_my_cities_path %>
+<% end %>

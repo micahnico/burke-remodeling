@@ -1,0 +1,48 @@
+<% @cities.each do |city| %>
+<h3><%= city.city_name %>, <%= city.state %> | Population: <%= city.population %></h3>
+<table class="table table-striped table-responsive">
+  <thead>
+    <tr>
+      <th>Business name</th>
+      <th>TZ</th>
+      <th>Email</th>
+      <th>Contact</th>
+      <th>Website?</th>
+      <th>Web Address</th>
+      <th>Appt?</th>
+      <th>Mobile?</th>
+      <th>Phone</th>
+      <th>Stage</th>
+      <th>Zip code</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  	<% @zips = ZipCode.where(city_id: city.id) %>
+  	<% @salons = [] %>
+  	<% @zips.each do |zip| %>
+  	<% @salons = Salon.where(zip_code_id: zip.id) %>
+    <% @salons.each do |salon| %>
+      <tr>
+        <td><%= salon.business_name %></td>
+        <td><%= salon.time_zone %></td>
+        <td><%= salon.email %></td>
+        <td><%= salon.contact %></td>
+        <td><%= salon.website %></td>
+        <td><%= salon.web_address %></td>
+        <td><%= salon.appointment_scheduling %></td>
+        <td><%= salon.mobile_ready %></td>
+        <td><%= salon.phone %></td>
+        <td><%= salon.stage %></td>
+        <td><%= salon.zip_code_id %></td>
+        <td><%= link_to 'Show', city_zip_code_salon_path(city, zip, salon) %></td>
+        <td><%= link_to 'Edit', edit_city_zip_code_salon_path(city, zip, salon) %></td>
+        <td><%= link_to 'Destroy', [city, zip, salon], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+    <% end %>
+  </tbody>
+</table>
+	
+<% end %>

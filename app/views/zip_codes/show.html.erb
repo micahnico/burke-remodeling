@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @zip_code.zip %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @zip_code.city_id %>
+</p>
+
+<%= link_to 'Edit', edit_city_zip_code_path(@city, @zip_code) %> |
+<%= link_to 'Add Salon', new_city_zip_code_salon_path(@city, @zip_code) %> |
+<%= link_to 'Back', city_zip_codes_path(@city) %>

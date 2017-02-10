@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h2>Ready to Sell?</h2>
+
+      <h3>A Couple Questions:</h3>
+
+      <%= form_for(@sales_session) do |f| %>
+        <% if @sales_session.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@sales_session.errors.count, "error") %> prohibited this city from being saved:</h2>
+
+            <ul>
+            <% @sales_session.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+        <h3><span>How are you prospecting? <br /><%= f.select(:walking, options_for_select([['Walk Into Businesses', true], ['Calling on the Phone', false]]), class: "form-control ") 
+          %></span></h3>
+
+        <h3><span>Where are you now? <small><%= f.text_field :start_location, :placeholder => 'Address, City, State or Zip', :class => "form-control input-lg" %></small></span></h3>
+        <div class="actions">
+      	<%= f.submit "Next >>", :class => "btn btn-success" %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

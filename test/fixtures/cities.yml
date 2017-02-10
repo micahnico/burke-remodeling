@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  wiki_link: MyString
+  wiki_text: MyText
+  city_name: MyString
+  state: MyString
+  population: 9.99
+  city_url: MyString
+
+two:
+  wiki_link: MyString
+  wiki_text: MyText
+  city_name: MyString
+  state: MyString
+  population: 9.99
+  city_url: MyString

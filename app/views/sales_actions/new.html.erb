@@ -1,0 +1,28 @@
+<p>Your First Stop Is: <b><%= @salon.business_name %></b></p>
+<p>Go To: <b><%= "#{@salon.street_address}, #{@salon.zip_code.city.city_name}, #{@salon.zip_code.city.state} #{@salon.zip_code.zip}" %></b></p>
+
+<h4>Contact Information:</h4>
+<ul>
+  <% if @salon.contact? %>
+	<li>Contact Name: <%= @salon.contact %></li>
+  <% end %>
+  <% if @salon.phone? %>
+	<li>Phone Number: <%= @salon.phone %></li>
+  <% end %>
+  <% if @salon.stage? %>
+	<li>Current Stage: <%= @salon.stage %></li>
+  <% end %>
+  	<li>Do they have a website? <%= @salon.website %></li>
+  <% if @salon.website? %>
+	<li>Web Address: <%= @salon.web_address %></li>
+  <% end %>	
+  	<li>Is it Mobile Responsive? <%= @salon.mobile_ready %></li>
+  	<li>Appointment Scheduling Online? <%= @salon.appointment_scheduling %></li>
+</ul>
+<p>Notes:</p>
+<% @salon.notes.each do |note| %>
+	<p><%= note.body %></p>
+	<p>Created: <%= note.created_at.strftime("%a, %b %d, %Y") %></p>
+	<p>---------------------</p>
+<% end %>
+

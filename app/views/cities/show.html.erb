@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Wiki link:</strong>
+  <%= @city.wiki_link %>
+</p>
+
+<p>
+  <strong>Wiki text:</strong>
+  <%= @city.wiki_text %>
+</p>
+
+<p>
+  <strong>City name:</strong>
+  <%= @city.city_name %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @city.state %>
+</p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @city.population %>
+</p>
+
+<p>
+  <strong>City url:</strong>
+  <%= @city.city_url %>
+</p>
+
+<%= link_to 'Edit', edit_city_path(@city) %> |
+<%= link_to 'Back', cities_path %> |
+<%= link_to 'Add Zip', new_city_zip_code_path(@city) %>
