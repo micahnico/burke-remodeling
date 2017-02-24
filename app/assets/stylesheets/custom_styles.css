@@ -18,3 +18,8 @@ section#about {
 .red-text {
 	color: #EF4035;
 }
+
+.project-details {
+	background-color: rgba(169, 169, 169, 0.75);
+	padding: 20px !important;
+}
