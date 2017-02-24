@@ -9,3 +9,12 @@
 section#about {
 	padding-top: 45px !important;
 }
+
+.btn-huge{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.red-text {
+	color: #EF4035;
+}

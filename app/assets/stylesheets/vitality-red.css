@@ -392,7 +392,7 @@ header.video .scroll-down {
   }
 }
 aside.cta-quote {
-  color: black;
+  color: #f5f5f5;
   background-color: #222;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -1088,15 +1088,15 @@ footer.footer .copyright p.small {
             border-radius: 8px;
 }
 .btn-outline-light {
-  color: #333333;
-  background: white;
-  outline: none;
+  color: #f5f5f5;
+  background: #222;
+  outline: #f5f5f5;
 }
 .btn-outline-light:hover,
 .btn-outline-light:focus {
-  color: white;
-  border: 1px solid white;
-  background: transparent;
+  color: #222;
+  border: 1px solid #222;
+  background: #f5f5f5;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
