@@ -33,3 +33,58 @@ section#about {
 .text-spacing-7 {
 	letter-spacing: 0.7px;
 }
+
+#toggleNavButton {
+	margin-top: 15px;
+}
+
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-header {
+		margin-bottom: 10px !important;
+	}
+
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+        padding: 0px !important;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+#visualizer {
+    padding-bottom: 0px !important;
+}
+
+#visualImage {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

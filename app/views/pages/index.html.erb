@@ -13,12 +13,15 @@
     <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse" id="toggleNavButton">
                     <span class="sr-only">Toggle navigation</span>
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars fa-2x"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <span><b>Burke</b> <i class="fa fa-home"></i> <b>Remodeling</b></span>
+                <a class="navbar-brand page-scroll hidden-xs hidden-sm" href="#page-top">
+                    <span><b>Burke</b> <i class="fa fa-home"></i> <b>Building &amp; Remodeling</b></span>
+                </a>
+                <a class="navbar-brand page-scroll visable-xs visable-sm hidden-md hidden-lg" href="#page-top">
+                    <span><b>Burke</b> <i class="fa fa-home"></i> <b>Building &amp;<br />Remodeling</b></span>
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="collapse">
@@ -39,7 +42,7 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" target="blank" href="http://burkeremodeling.pro.renoworks.com/">Visualizer</a>
+                        <a class="page-scroll" href="#visualizer">Visualizer</a>
                     </li>
                 </ul>
             </div>  
@@ -72,22 +75,22 @@
                 <div class="col-md-4 wow fadeIn" data-wow-delay=".2s">
                     <div class="about-content">
                         <i class="fa fa-pencil fa-4x black"></i>
-                        <h3>Architecture Desgin</h3>
+                        <h3>Desgin</h3>
                         <p>Each and every one our construction or remodeling projects is carefully designed and completed by our team of professionals. </p>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn" data-wow-delay=".6s">
+                    <div class="about-content">
+                        <i class="fa fa-home fa-4x"></i>
+                        <h3>New Homes &amp; Additions</h3>
+                        <p>Whether you are looking to build a custom home or add to your existing home, our team will provide you with ideas that fit your style and budget.</p>
                     </div>
                 </div>
                 <div class="col-md-4 wow fadeIn" data-wow-delay=".4s">
                     <div class="about-content">
                         <i class="fa fa-wrench fa-4x"></i>
-                        <h3>Renovation and Repair</h3>
+                        <h3>Renovation and Remodels</h3>
                         <p>Renovation and preservation projects are done with care and concern for architectural and structural integrity as well as beauty and function.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 wow fadeIn" data-wow-delay=".6s">
-                    <div class="about-content">
-                        <i class="fa fa-bath fa-4x"></i>
-                        <h3>Additions and Remodels</h3>
-                        <p>If you're looking to add on a room to your home or remodel an existing space, our team will provide you with ideas that fit your style and budget.</p>
                     </div>
                 </div>
             </div>
@@ -99,7 +102,7 @@
         <div class="container wow fadeIn">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <span class="quote">We offer a <b>wide range</b> of remodeling services in the <b>Hollidaysburg area</b> as well as <b>custom construction</b> from the ground up.  Our team works <b>directly</b> with you to find the <b>best design</b> or solution for your home projects to <b>fits your budget.</b></span>
+                    <span class="quote">We offer a <b>wide range</b> of remodeling services in the <b>Hollidaysburg area</b> as well as <b>custom construction</b> from the ground up.  Our team works <b>directly</b> with you to find the <b>best design</b> or solution for your home projects to <b>fit your budget.</b></span>
                     <hr class=" colored">
                     <a class="btn btn-primary btn-lg page-scroll" href="#work">Designs</a>
                 </div>
@@ -147,7 +150,7 @@
                                 <li>Years of Experience</li>
                                 <li>Highly Skilled</li>
                                 <li>Passion for Excellence</li>
-                                <li>Bonded &amp; Insured</li>
+                                <li>Licensed &amp; Insured</li>
                             </ul>
                         </div>
                     </div>
@@ -191,7 +194,7 @@
                 <div class="row">
                     <div class="col-md-5 col-md-push-7 col-xs-12">
                         <div class="project-details">
-                            <span class="project-name">Interior Design</span>
+                            <span class="project-name">Custom Home<br />Construction</span>
                             <hr class="colored">
                             <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
                         </div>
@@ -412,76 +415,30 @@
         </div>
     </section>
 
-    
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing hidden">
-        <div class="container wow fadeIn">
-            <div class="row text-center">
-                <div class="col-lg-12">
-                    <h2>Cost</h2>
-                    <hr class="colored">
-                    <p>We work with no more than 1 salon in each zip code.  Our goal is to help our clients compete and win in their market.  Your monthly investment is determined by the number of stylists who need a login.</p>
-                </div>
-            </div>
-            <div class="row content-row">
-                <!-- Pricing Table 1 -->
-                <div class="col-md-4">
-                    <div class="pricing-item featured-first">
-                        <h3>Design</h3>
-                        <hr class="colored">
-                        <div class="price"><span class="number"><sup>$</sup>900</span> / One Time<br />
-                        or 2 Payments of $500</div>
-                        <ul class="list-group">
-                            <li class="list-group-item">Custom Mobile First Design</li>
-                            <li class="list-group-item">Unlimited Revisions</li>
-                            <li class="list-group-item">Admin Dashboard</li>
-                            <li class="list-group-item">Professional Stock Photos</li>
-                            <li class="list-group-item">Appointment Functionality</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-dark">Sign Up</a>
-                    </div>
-                </div>
-                <!-- Pricing Table 2 -->
-                <div class="col-md-4">
-                    <div class="pricing-item featured">
-                        <h3>Starter</h3>
-                        <hr class="colored">
-                        <div class="price"><span class="number"><sup>$</sup>95</span> / Month</div>
-                        <ul class="list-group">
-                            <li class="list-group-item"><strong>5</strong> Users</li>
-                            <li class="list-group-item">Implementation Training</li>
-                            <li class="list-group-item">5 Texting Number</li>
-                            <li class="list-group-item">5 Custom Email Addresses</li>
-                            <li class="list-group-item">1 HTML Email Design</li>
-                            <li class="list-group-item">Quarterly Feature Updates</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-dark">Sign Up</a>
-                    </div>
-                </div>
-                <!-- Pricing Table 3 -->
-                <div class="col-md-4">
-                    <div class="pricing-item featured-last">
-                        <h3>Plus</h3>
-                        <hr class="colored">
-                        <div class="price"><span class="number">+ <sup>$</sup>19</span> / Per User</div>
-                        <ul class="list-group">
-                            <li class="list-group-item">Add Stylists</li>
-                            <li class="list-group-item">Multi-Location</li>
-                            <li class="list-group-item">Unlimited Text / Emails</li>
-                            <li class="list-group-item">Unlimited Support</li>
-                            <li class="list-group-item">Custom Page Per Stylist</li>
-                            <li class="list-group-item">Quarterly Feature Updates</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-dark">Sign Up</a>
-                    </div>
-                </div>
-            </div>
+   <!-- Portfolio Carousel Heading -->
+    <section id="visualizer" class="">
+        <div class="container text-center wow fadeIn">
+            <h2>Visualizer</h2>
+            <hr class="colored">
+            <p>Upload a photo and build your exterior design ideas!</p>
+            <a class="btn btn-primary btn-lg" href="http://burkeremodeling.pro.renoworks.com/" target="blank">Launch Visualizer</a>
         </div>
     </section>
 
+    <!-- Portfolio Carousel -->
+    <section class="wow fadeIn">
+        <div class="container">
+        <div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+            <%= image_tag "house_drawing.jpeg", class: "img img-responsive", id: "visualImage" %>
+        </div>
+        </div>
+
+    </section>
+
+
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="bg-gray">
         <div class="container wow fadeIn">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -575,6 +532,7 @@
             <div class="row copyright">
                 <div class="col-lg-12">
                     <p class="small footer-text">&copy; 2017 Burke Remodeling</p>
+                    <p class="small footer-text">PA License # PA014136</p>
                 </div>
             </div>
         </div>
@@ -620,9 +578,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 modal-text">
-                            <h2>Interior Design</h2>
+                            <h2>Custom Home Construction</h2>
                             <hr class="colored">
-                            <p><b class="text-spacing-7">Designing the interior of your home is a project that takes extensive knowledge and experience.  Allow us to partner with you to select the best floor plan, color scheme and designs.</b></p>
+                            <p><b class="text-spacing-7">Building a custom home is a project that requires true partnership with your general contractor.  We handle the entire process from design all the way to handing you the keys!</b></p>
                         </div>
                         <div class="col-md-8 col-md-offset-2">
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -648,7 +606,7 @@
                         <div class="col-md-8 col-md-offset-2 modal-text">
                             <h2>Full Renovation</h2>
                             <hr class="colored">
-                            <p><b class="text-spacing-7">Did you just purchase a new house or are you looking to sell?  It might be time to dramatically increase the value of your home with a complete renovation.  We can complete a renovation from planning to implementation while staying on schedule and on budget.</b></p>
+                            <p><b class="text-spacing-7">Did you just purchase a new house or are you looking to sell?  We can complete a renovation from planning to implementation while staying on schedule and on budget.</b></p>
                         </div>
                         <div class="col-md-8 col-md-offset-2">
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -672,7 +630,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 modal-text">
-                            <h2>Archeticural Design</h2>
+                            <h2>Design</h2>
                             <hr class="colored">
                             <p>A good project begins with a good plan.  Our experienced in archeticural design allows us to set clear project goals before we begin to ensure that your project turns out the way you want.  By starting with a detail plan, we can help you map out project on paper then move quickly to implement the design.</p>
                         </div>
