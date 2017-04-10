@@ -20,4 +20,6 @@ Rails.application.routes.draw do
   resources :sales_sessions do 
     resources :sales_actions
   end
+
+  resources :form_contacts
 end
