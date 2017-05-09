@@ -28,6 +28,7 @@ class FormContactsController < ApplicationController
 
     respond_to do |format|
       if @form_contact.save
+        AdminMailer.message_alert(@form_contact).deliver
         format.html { redirect_to 'http://burkeremodeling.pro.renoworks.com/', notice: 'Thank You!  We will follow up shortly.' }
         format.json { render :show, status: :created, location: @form_contact }
       else
