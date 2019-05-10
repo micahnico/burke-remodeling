@@ -1,10 +1,5 @@
 class AdminMailer < ApplicationMailer
-	# default to: "josh@burkeremodeling.com"
-	default to: "micahnicodemus22@gmail.com"
-
-	# def mandrill_client
-	# 	@mandrill_client ||= Mandrill::API.new ENV['MANDRILL_API_KEY']
-	# end
+	default to: "josh@burkeremodeling.com"
 
 	def message_alert(form_contact)
 		@form_contact = form_contact
