@@ -1,5 +1,6 @@
 class FormContactsController < ApplicationController
   before_action :set_form_contact, only: [:show, :edit, :update, :destroy]
+  invisible_captcha only: [:create, :update], honeypot: :physical_address
 
   # GET /form_contacts
   # GET /form_contacts.json
